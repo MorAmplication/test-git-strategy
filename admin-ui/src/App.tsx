@@ -9,6 +9,10 @@ import { UserList } from "./user/UserList";
 import { UserCreate } from "./user/UserCreate";
 import { UserEdit } from "./user/UserEdit";
 import { UserShow } from "./user/UserShow";
+import { OfekList } from "./ofek/OfekList";
+import { OfekCreate } from "./ofek/OfekCreate";
+import { OfekEdit } from "./ofek/OfekEdit";
+import { OfekShow } from "./ofek/OfekShow";
 import { jwtAuthProvider } from "./auth-provider/ra-auth-jwt";
 
 const App = (): React.ReactElement => {
@@ -41,6 +45,13 @@ const App = (): React.ReactElement => {
           edit={UserEdit}
           create={UserCreate}
           show={UserShow}
+        />
+        <Resource
+          name="Ofek"
+          list={OfekList}
+          edit={OfekEdit}
+          create={OfekCreate}
+          show={OfekShow}
         />
       </Admin>
     </div>
